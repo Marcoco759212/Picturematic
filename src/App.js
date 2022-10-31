@@ -5,7 +5,7 @@ import './styles/InstructionsStyle.scss'
 import './styles/ShotsStyle.scss'
 import './styles/TimeIntervalStyle.scss'
 import './styles/CameraStyle.scss'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import HomePage from './pages/HomePage';
 import NotFoundPage from './pages/NotFoundPage';
 import InstructionsPage from './pages/InstructionsPage';
@@ -45,7 +45,7 @@ function App() {
                 src={Curves4}
                 alt=''/>
             </div>
-        <Router>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Routes>
                 <Route exact path='/' element={<HomePage/>} />
                 <Route exact path='/instructions' element={<InstructionsPage/>} />
@@ -54,7 +54,7 @@ function App() {
                 <Route exact path='/camera' element={<CameraPage/>} />
                 <Route path='*' element={<NotFoundPage/>} />
             </Routes>
-        </Router>
+        </BrowserRouter>
         <img className='app-curve5'
                 src={Curves5}
                 alt=''
