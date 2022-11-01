@@ -6,7 +6,8 @@
   /* background: linear-gradient(45deg, rgba(255, 255, 0, 0.7), orange, rgba(255, 0, 0, 0.9)); */
   /* background: rgb(34,195,158); */
   background:  linear-gradient(0deg, rgba(114,125,122,1) 0%, rgba(23,22,22,1) 100%);
-  background-size: 200% 300%;
+  /* background-size: 200% 300%; */
+  background-color: black;
   animation: move 10s ease-in-out infinite;
 }
 

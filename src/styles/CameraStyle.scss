@@ -2,71 +2,126 @@
 //     padding: 0;
 // }
 
-.camera-content{
+.container{
     
-    // width: 100%;
-    // height: 100%;
+    width: 100%;
+    height: 100vh;
     // position: relative;
 
-    // display: flex;
-    // flex-direction: column;
+    display: flex;
+    flex-direction: column;
     // justify-content: end;
     // align-items: center;
-
-}
-
-.camera-image{
-    position: absolute;
-    width: 100%;
-    // height: 100%;
     z-index: 20;
 }
 
-.camera-btn{
-    position: absolute;
-    bottom: 30%;
-    left: calc(50% - 5rem);
+// .scene{
+//     z-index: 20;
+// }
 
+.webcam-video{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: 20;
+}
+
+.webcam-video button{
+    position: absolute;
     width: 10rem;
-    height: 10rem;
-    border-radius: 5rem;
-    border: 3px solid rgba(255, 255, 255, 0.8);
-    // margin: 2rem;
-    z-index: 20;
-    background-color: red;
-    transition: transform 0.4s ease;
-}
-
-.camera-btn::before{
-    content: 'Take picture';
-    position: absolute;
-    // top: calc(50% - 1rem);
-    top: 12rem;
-    left: calc(50% - 10rem);
-    width: 20rem;
     height: 5rem;
-    font-size: 2.4rem;
-    font-weight: 900;
-
-    padding: 0.5rem 1rem;
-    background-color: rgba(255, 255, 255, 0.8); 
+    font-size: 1.6rem;
+    left: calc(50% - 5rem);
+    bottom: 30%;
     z-index: 20;
-
-    transition: transform 0.6s ease;
 }
 
-.camera-content-images{
+.player{
     position: absolute;
-    bottom: 0;
+    z-index: 20;
+}
+
+.photo{
+    position: absolute;
+    z-index: 10;
+}
+
+.photo-booth{
+    position: absolute;
+    bottom: 0%;
     width: 100%;
-    height: 20rem;
-    display: flex;
-    flex-direction: row;
     background-color: black;
     z-index: 20;
 }
 
-.camera-galery{
-    width: 15rem;
-    height: 15rem;
+.strip{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
 }
+
+.strip a{
+    transform: scale(.9);
+    object-fit: cover;
+}
+
+// .camera-image{
+//     position: absolute;
+//     width: 100%;
+//     top: 0%;
+//     // height: 100%;
+//     z-index: 20;
+// }
+
+// .camera-btn{
+//     position: absolute;
+//     bottom: 30%;
+//     left: calc(50% - 5rem);
+
+//     width: 10rem;
+//     height: 10rem;
+//     border-radius: 5rem;
+//     border: 3px solid rgba(255, 255, 255, 0.8);
+//     // margin: 2rem;
+//     z-index: 20;
+//     background-color: red;
+//     transition: transform 0.4s ease;
+// }
+
+// .camera-btn::before{
+//     content: 'Take picture';
+//     position: absolute;
+//     // top: calc(50% - 1rem);
+//     top: 12rem;
+//     left: calc(50% - 10rem);
+//     width: 20rem;
+//     height: 5rem;
+//     font-size: 2.4rem;
+//     font-weight: 900;
+
+//     padding: 0.5rem 1rem;
+//     background-color: rgba(255, 255, 255, 0.8); 
+//     z-index: 20;
+
+//     transition: transform 0.6s ease;
+// }
+
+// .camera-content-images{
+//     position: absolute;
+//     bottom: 0;
+//     width: 100%;
+//     height: 20rem;
+//     display: flex;
+//     flex-direction: row;
+//     align-items: center;
+//     background-color: black;
+//     z-index: 20;
+// }
+
+// .camera-galery{
+//     width: 15rem;
+//     height: 15rem;
+//     object-fit: cover;
+//     background-color: gray;
+// }
