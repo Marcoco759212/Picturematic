@@ -23,28 +23,30 @@ const Camera = () => {
    
     const takePicture = () => {
         // const width = 400;
-        const width = 1200;
+        const width = 400;
         // const height = width / (16 / 9);
-        const height = width / (16 );
+        const height = 400;
+        console.log('videooo', videoRef.current);
+        console.log('photooo', photoRef.current);
         let video = videoRef.current;
         let photo = photoRef.current;
-        photo.width = width;
-        photo.height = height;
+        video.width = width;
+        video.height = height;
         let ctx = photo.getContext('2d');
         ctx.drawImage(video, 0, 0, width, height);
     }
    
-    const clearImage = () => {
-        let photo = photoRef.current;
-        let ctx = photo.getContext('2d');
-        ctx.clearRect(0,0,photo.width,photo.height);
-    }
+    // const clearImage = () => {
+    //     let photo = photoRef.current;
+    //     let ctx = photo.getContext('2d');
+    //     ctx.clearRect(0,0,photo.width,photo.height);
+    // }
 
     useEffect(() => {
-        // return() => {
+        return() => {
             console.log('start camera');
             getVideo();
-        // }
+        }
     }, [videoRef]);
 
     return (
@@ -52,12 +54,15 @@ const Camera = () => {
             <video ref={videoRef} 
                 className="camera-image">
             </video>
+            <div className='camera-content-images'>
+                <canvas className="camera-galery" 
+                    ref={photoRef}>
+                </canvas>
+            </div>
             <button onClick={takePicture} 
                 className="camera-btn">
             </button>
-            {/* <canvas className="container" 
-                ref={photoRef}>
-            </canvas> */}
+
             {/* <button onClick={clearImage} 
                 className="btn btn-primary container">
                 Clear Image
