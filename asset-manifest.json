@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Picturematic/static/css/main.164fae1e.css",
-    "main.js": "/Picturematic/static/js/main.3abd415c.js",
+    "main.css": "/Picturematic/static/css/main.9f42e25f.css",
+    "main.js": "/Picturematic/static/js/main.5d74d3e5.js",
     "static/js/787.4f305fab.chunk.js": "/Picturematic/static/js/787.4f305fab.chunk.js",
     "static/media/curves4.svg": "/Picturematic/static/media/curves4.2e57abd013d6f8f4adec867b51ee0c30.svg",
     "static/media/curves5.svg": "/Picturematic/static/media/curves5.1bad0e9f1fbb70ac5a7f5dced78a8d9e.svg",
@@ -9,12 +9,12 @@
     "static/media/curves3.svg": "/Picturematic/static/media/curves3.48587879f0c015affc1b88112b472ec6.svg",
     "static/media/curves1.svg": "/Picturematic/static/media/curves1.4e380b8695ad4f64a176ad33d1bd05c5.svg",
     "static/media/curves2.svg": "/Picturematic/static/media/curves2.3a08869f572fc01088a58e62681c27d9.svg",
-    "main.164fae1e.css.map": "/Picturematic/static/css/main.164fae1e.css.map",
-    "main.3abd415c.js.map": "/Picturematic/static/js/main.3abd415c.js.map",
+    "main.9f42e25f.css.map": "/Picturematic/static/css/main.9f42e25f.css.map",
+    "main.5d74d3e5.js.map": "/Picturematic/static/js/main.5d74d3e5.js.map",
     "787.4f305fab.chunk.js.map": "/Picturematic/static/js/787.4f305fab.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.164fae1e.css",
-    "static/js/main.3abd415c.js"
+    "static/css/main.9f42e25f.css",
+    "static/js/main.5d74d3e5.js"
   ]
 }
